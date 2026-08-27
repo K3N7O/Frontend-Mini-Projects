@@ -21,7 +21,7 @@ body {
   flex-direction: column;
   border: 0.125em solid black;
   border-radius: 0.5em;
-  padding: 50px;
+  padding: 40px;
 }
 
 hgroup {
@@ -36,19 +36,33 @@ hgroup p {
 .log {
   display: flex;
   flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: flex-start;
+  align-items: center;
+  background-color: red;
   padding-block: 20px;
 }
 
 .date {
   color: gray;
-  padding-inline: 1em;
+  background-color: rebeccapurple;
+  position: relative;
+  flex: 1 1 0;
+  text-align: center;
 }
 
 .dot {
+  position: relative;
+  right: 5px;
+  background-color: black;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
 }
 
+.note {
+  flex: 2 1 0;
+  flex-wrap: nowrap;
+  background-color: aqua;
+}
 button {
   padding: 1em;
   background-color: black;
