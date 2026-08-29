@@ -33,17 +33,29 @@ hgroup p {
   margin-block: 1em;
 }
 
+main::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2.5px;
+  height: 52.5%;
+  left: 45%;
+  transform: translateY(50%);
+  margin-left: .75%;
+  background-color: black;
+}
+
 .log {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  background-color: red;
   padding-block: 20px;
+  
 }
 
 .date {
   color: gray;
-  background-color: rebeccapurple;
   position: relative;
   flex: 1 1 0;
   text-align: center;
@@ -61,12 +73,24 @@ hgroup p {
 .note {
   flex: 2 1 0;
   flex-wrap: nowrap;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
+
+
 button {
   padding: 1em;
   background-color: black;
+  margin-top: 2em;
   color: white;
   border: 0;
   border-radius: 4px;
+}
+
+button:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transition: .4s;
+  border: 2px solid black;
+  padding: .95em;
 }
