@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Public Sans", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -7,15 +9,43 @@
 main {
   display: grid;
   justify-content: space-evenly;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 0.25em;
+  grid-template-areas:
+    "t1 t2"
+    "t3 t3"
+    "t4 t4";
+  padding: 0.25em;
+}
+
+p {
+  word-spacing: 5px;
+}
+
+.testimonial-card1 {
+  grid-area: t1;
+}
+.testimonial-card2 {
+  grid-area: t2;
+}
+.testimonial-card3 {
+  grid-area: t3;
+  align-self: center;
+  justify-self: center;
+}
+.testimonial-card4 {
+  grid-area: t4;
+  align-self: center;
+  justify-self: center;
 }
 
 .testimonial-card1,
 .testimonial-card2,
 .testimonial-card3,
 .testimonial-card4 {
-  padding: 0.75em;
+  max-width: 650px;
+  min-width: 300px;
 }
+
 .testimonial-card2,
 .testimonial-card4 {
   border: 2px solid black;
@@ -24,15 +54,30 @@ main {
 .testimonial-card3 {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .testimonial-card3 img {
   height: 200px;
   width: 200px;
+  margin-right: 25px;
 }
-.testimonial-card3 .text-card p {
-  margin-top: 0.5em;
+.testimonial-card3 h4 {
+  color: gray;
+  font-weight: 300;
+}
+.testimonial-card3 .text-card {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  background-color: #1e1e1e;
+  color: white;
+  padding-block: 30px;
+  padding-inline: 15px;
+  border-radius: 8px;
+}
+.testimonial-card3 .text-card::before {
+  content: "⭐⭐⭐⭐⭐";
 }
 .testimonial-card4 {
   display: flex;
@@ -40,6 +85,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 1em;
+  padding: 2em;
 }
 .tc-message1 {
   background-color: black;
@@ -54,10 +100,10 @@ main {
 .tc-message1::after {
   content: "";
   position: absolute;
-  left: 30px;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 10px solid black;
+  transform: translateX(75%);
 }
 .profile-card1 {
   display: flex;
@@ -70,7 +116,7 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-inline: 0.25em;
+  padding-inline: 0.75em;
 }
 .text-card {
   padding-inline: 0.25em;
