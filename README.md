@@ -2,4 +2,5 @@
 
 This repo is where I will put all of my contributions for Frontend projects.
 
-[Roadmap.sh](https://roadmap.sh/projects/changelog-component)
+[Changelog Component](https://roadmap.sh/projects/changelog-component)
+[Testimonial Cards](https://roadmap.sh/projects/testimonial-cards)
