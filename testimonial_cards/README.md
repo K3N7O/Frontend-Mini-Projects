@@ -2,4 +2,4 @@
 
 Copy the files and run with Live Server
 
-[Roadmap.sh] https://roadmap.sh/projects/testimonial-cards
+[Roadmap.sh] (https://roadmap.sh/projects/testimonial-cards)
