@@ -10,6 +10,7 @@ main {
   display: grid;
   justify-content: space-evenly;
   gap: 0.25em;
+  row-gap: 1em;
   grid-template-areas:
     "t1 t2"
     "t3 t3"
