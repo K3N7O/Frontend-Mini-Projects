@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessible Form UI</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <main>
+      <div class="form">
+        <div class="details">
+          <label for="">Full Name</label>
+          <input type="text" placeholder="What should we call you?" />
+
+          <label for="">Email</label>
+          <input type="email" />
+
+          <label for="">Enter Password</label>
+          <input type="password" />
+
+          <label for="">Confirm Password</label>
+          <input type="password" />
+
+          <button>Update Profile</button>
+        </div>
+
+        <div class="completion">
+          <div class="progress">
+            <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+              <text x="50" y="62" text-anchor="middle" font-size="24">65%</text>
+              <circle
+                cx="50"
+                cy="55"
+                r="40"
+                fill="none"
+                stroke="gray"
+                stroke-width="1"
+              />
+              <circle
+                cx="50"
+                cy="55"
+                r="40"
+                fill="none"
+                stroke="black"
+                stroke-width="3"
+                stroke-dashoffset="-25"
+                pathlength="100"
+                stroke-dasharray="65"
+                stroke-linecap="round"
+              />
+            </svg>
+            <h4>Profile Completeness</h4>
+          </div>
+          <div class="tasks">
+            <p>Create Account</p>
+            <p>Update Roadmap Progress</p>
+            <p>Setup Public Profile</p>
+            <p>Complete your first project</p>
+            <p>Invite your friends</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
