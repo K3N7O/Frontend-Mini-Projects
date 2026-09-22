@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
 * {
+  font-family: "Fredoka", sans-serif;
   padding: 0;
   margin: 0;
+  font-weight: 400;
 }
 main {
   display: flex;
@@ -12,17 +15,15 @@ main {
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-  margin-bottom: 12px;
-  padding: 8px;
+  padding: 6px;
   border-radius: 8px;
   border-style: solid;
   border-color: #1e1e1e;
+  border-width: 2px;
 }
-
 label {
   margin-bottom: 4px;
 }
-
 button {
   padding: 8px;
   background-color: #1e1e1e;
@@ -33,42 +34,67 @@ button {
   width: 100%;
   margin-top: 4px;
 }
-.form,
+form,
 .details,
 .completion,
 .progress,
-.tasks {
+.tasks,
+.form-group {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-.form {
-  width: 600px;
+.form-group {
+  gap: 8px;
+}
+form {
+  width: 550px;
+  border: solid black 2px;
+  border-radius: 8px;
+  padding: 2em;
+  flex-direction: row;
+  column-gap: 1.75em;
 }
 .details {
   width: 50%;
+  justify-content: space-between;
 }
 .completion {
   width: 50%;
 }
 .progress {
   gap: 0.75em;
-  margin-bottom: 1em;
-  background-color: red;
-  padding: 1.25em;
+  padding: 1em;
   align-items: center;
 }
 .tasks {
   background-color: lightgray;
   border-radius: 8px;
-  height: 200px;
   display: block;
-  padding: 1.75em;
+  padding: 1.25em;
+  width: 75%;
+  align-self: center;
 }
 .tasks p {
-  margin-block: 8px;
+  margin-bottom: 20px;
 }
-.form {
-  flex-direction: row;
-  column-gap: 4em;
+.passgroup {
+  position: relative;
+}
+.passgroup input[type="password"] {
+  width: 100%;
+  border-width: 2px;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #1e1e1e;
+  box-sizing: border-box;
+}
+.passgroup img {
+  position: absolute;
+  align-self: center;
+  transform: translateX(-135%);
+}
+.tasks p:nth-last-child(n + 3) {
+  color: gray;
+  text-decoration: line-through;
 }

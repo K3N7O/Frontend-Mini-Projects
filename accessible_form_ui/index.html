@@ -8,19 +8,48 @@
   <link rel="stylesheet" href="style.css" />
   <body>
     <main>
-      <div class="form">
+      <form action="">
         <div class="details">
-          <label for="">Full Name</label>
-          <input type="text" placeholder="What should we call you?" />
+          <div class="form-group">
+            <label for="">Full Name</label>
+            <input
+              id="full"
+              type="text"
+              placeholder="What should we call you?"
+            />
+          </div>
 
-          <label for="">Email</label>
-          <input type="email" />
+          <div class="form-group">
+            <label for="">Email</label>
+            <input id="email" type="email" placeholder="john@doe.com" />
+          </div>
 
-          <label for="">Enter Password</label>
-          <input type="password" />
+          <div class="form-group">
+            <label for="password">Enter Password</label>
+            <div class="passgroup">
+              <input
+                id="password"
+                type="password"
+                aria-required="true"
+                placeholder="xxxxxxxx"
+                aria-invalid=""
+              />
+              <img src="../assets/icons/eye-alt.svg" alt="eye-con" />
+            </div>
+          </div>
 
-          <label for="">Confirm Password</label>
-          <input type="password" />
+          <div class="form-group">
+            <label for="cpassword">Confirm Password</label>
+            <div class="passgroup">
+              <input
+                id="cpassword"
+                type="password"
+                aria-required="true"
+                placeholder="xxxxxxxx"
+              />
+              <img src="../assets/icons/eye-alt.svg" alt="eye-con" />
+            </div>
+          </div>
 
           <button>Update Profile</button>
         </div>
@@ -50,7 +79,7 @@
                 stroke-linecap="round"
               />
             </svg>
-            <h4>Profile Completeness</h4>
+            <h4 style="font-weight: 500">Profile Completeness</h4>
           </div>
           <div class="tasks">
             <p>Create Account</p>
@@ -60,7 +89,7 @@
             <p>Invite your friends</p>
           </div>
         </div>
-      </div>
+      </form>
     </main>
   </body>
 </html>
