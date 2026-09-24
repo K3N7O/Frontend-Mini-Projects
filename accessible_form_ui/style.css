@@ -11,7 +11,6 @@ main {
   align-items: center;
   height: 100vh;
 }
-
 input[type="text"],
 input[type="email"],
 input[type="password"] {
@@ -94,7 +93,13 @@ form {
   align-self: center;
   transform: translateX(-135%);
 }
+.passgroup img:hover {
+  cursor: pointer;
+}
 .tasks p:nth-last-child(n + 3) {
   color: gray;
   text-decoration: line-through;
+}
+input:focus {
+  box-shadow: #1e1e1e 3px 3px 10px 1px;
 }
