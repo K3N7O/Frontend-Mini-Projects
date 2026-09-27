@@ -14,7 +14,8 @@ main {
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-  padding: 6px;
+  padding: 10px;
+  font-size: 1em;
   border-radius: 8px;
   border-style: solid;
   border-color: #1e1e1e;
@@ -32,6 +33,9 @@ button {
   color: white;
   width: 100%;
   margin-top: 4px;
+}
+button:hover {
+  cursor: pointer;
 }
 form,
 .details,
@@ -80,7 +84,8 @@ form {
 .passgroup {
   position: relative;
 }
-.passgroup input[type="password"] {
+.passgroup input[type="password"],
+.passgroup input[type="text"] {
   width: 100%;
   border-width: 2px;
   border-radius: 8px;
@@ -92,9 +97,15 @@ form {
   position: absolute;
   align-self: center;
   transform: translateX(-135%);
+  opacity: 0.5;
 }
 .passgroup img:hover {
   cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  opacity: 1;
+}
+.passgroup .active {
+  opacity: 1;
 }
 .tasks p:nth-last-child(n + 3) {
   color: gray;
@@ -102,4 +113,12 @@ form {
 }
 input:focus {
   box-shadow: #1e1e1e 3px 3px 10px 1px;
+}
+input[type="email"],
+input[type="email"]::placeholder,
+.form-group:nth-child(2):after {
+  content: "Email is already taken";
+  color: red;
+  border-color: red;
+  outline-color: red;
 }

@@ -6,22 +6,22 @@
     <title>Accessible Form UI</title>
   </head>
   <link rel="stylesheet" href="style.css" />
+
   <body>
     <main>
       <form action="">
         <div class="details">
           <div class="form-group">
-            <label for="">Full Name</label>
+            <label for="full">Full Name</label>
             <input
               id="full"
               type="text"
               placeholder="What should we call you?"
             />
           </div>
-
           <div class="form-group">
-            <label for="">Email</label>
-            <input id="email" type="email" placeholder="john@doe.com" />
+            <label for="eamil">Email</label>
+            <input id="email" type="email" placeholder="sample@doe.com" />
           </div>
 
           <div class="form-group">
@@ -32,9 +32,16 @@
                 type="password"
                 aria-required="true"
                 placeholder="xxxxxxxx"
-                aria-invalid=""
+                aria-required="true"
+                aria-invalid="false"
+                required
               />
-              <img src="../assets/icons/eye-alt.svg" alt="eye-con" />
+              <img
+                src="../assets/icons/eye-alt.svg"
+                alt="eye-con"
+                class="img"
+                onclick="showpass('password', this)"
+              />
             </div>
           </div>
 
@@ -46,8 +53,16 @@
                 type="password"
                 aria-required="true"
                 placeholder="xxxxxxxx"
+                aria-required="true"
+                aria-invalid="false"
+                required
               />
-              <img src="../assets/icons/eye-alt.svg" alt="eye-con" />
+              <img
+                src="../assets/icons/eye-alt.svg"
+                alt="eye-con"
+                class="img"
+                onclick="showpass('cpassword', this)"
+              />
             </div>
           </div>
 
@@ -92,4 +107,12 @@
       </form>
     </main>
   </body>
+  <script>
+    function showpass(p, icon) {
+      var x = document.getElementById(p);
+      icon.classList.toggle("active");
+      x.type =
+        x.type === "password" ? (x.type = "text") : (x.type = "password");
+    }
+  </script>
 </html>
