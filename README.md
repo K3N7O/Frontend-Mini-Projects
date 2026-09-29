@@ -2,10 +2,12 @@
 
 This repo is where I will put all of my contributions for Frontend projects.
 
-[Changelog Component](https://roadmap.sh/projects/changelog-component)
+[Accessible Form UI](https://roadmap.sh/projects/accessible-form-ui)
 
-[Testimonial Cards](https://roadmap.sh/projects/testimonial-cards)
+[Changelog Component](https://roadmap.sh/projects/changelog-component)
 
 [Datepicker UI](https://roadmap.sh/projects/datepicker-ui)
 
-[ACcessible Form UI](https://roadmap.sh/projects/accessible-form-ui)
+[Image Grid Layout](https://roadmap.sh/projects/image-grid)
+
+[Testimonial Cards](https://roadmap.sh/projects/testimonial-cards)
