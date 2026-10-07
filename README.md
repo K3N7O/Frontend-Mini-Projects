@@ -11,3 +11,5 @@ This repo is where I will put all of my contributions for Frontend projects.
 [Image Grid Layout](https://roadmap.sh/projects/image-grid)
 
 [Testimonial Cards](https://roadmap.sh/projects/testimonial-cards)
+
+[Simple Tabs](https://roadmap.sh/projects/simple-tabs)
