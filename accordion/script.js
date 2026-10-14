@@ -1,15 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const question = document
+  const questions = document
     .querySelector(".main")
     .querySelectorAll('[role="tab"]');
 
-  const answer = document.querySelectorAll(".ans");
+  const answers = document.querySelectorAll(".ans");
 
-  question.forEach((questions) => {
-    questions.addEventListener("click", (e) => {
-      question.forEach((q) => q.classList.remove("show"));
+  questions.forEach((question) => {
+    question.addEventListener("click", (e) => {
+      const clicked = e.currentTarget;
+      const match = clicked.nextElementSibling;
 
-      console.log(e.currentTarget);
+      answers.forEach((a) => {
+        if (match !== a) a.classList.remove("show");
+      });
+
+      match.classList.toggle("show");
     });
   });
 });

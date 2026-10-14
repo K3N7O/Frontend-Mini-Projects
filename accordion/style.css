@@ -11,11 +11,13 @@ body {
   align-items: center;
 }
 .main {
+  box-sizing: content-box;
   padding: 2em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1em;
+  width: 70%;
 }
 .faq {
   display: inline-flex;
@@ -26,7 +28,14 @@ body {
 }
 .ans {
   display: none;
+  box-sizing: border-box;
   width: 100%;
   margin-block: 3px;
   padding: 10px 5px;
+}
+.show {
+  display: block;
+  border: 2px solid;
+  border-radius: 3px;
+  padding: 10px;
 }
