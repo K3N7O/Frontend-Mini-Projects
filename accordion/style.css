@@ -2,6 +2,18 @@
   padding: 0;
   margin: 0;
   object-fit: cover;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
 }
 body {
   height: 100vh;
@@ -9,6 +21,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #161a1d;
+  color: #ffffff;
 }
 .main {
   box-sizing: content-box;
@@ -23,8 +37,12 @@ body {
   display: inline-flex;
   width: 100%;
   justify-content: space-between;
-  padding: 10px 5px;
+  padding: 10px 12px;
   margin-block: 3px;
+  background-color: #ba181b;
+  border: none;
+  border-radius: 3px;
+  color: #f5f3f4;
 }
 .ans {
   display: none;
@@ -32,10 +50,13 @@ body {
   width: 100%;
   margin-block: 3px;
   padding: 10px 5px;
+  color: #161a1d;
+  font-weight: 600;
+  background-color: #d3d3d3;
 }
 .show {
   display: block;
-  border: 2px solid;
+  border: solid 2px black;
   border-radius: 3px;
   padding: 10px;
 }
