@@ -39,8 +39,8 @@ body {
   justify-content: space-between;
   padding: 10px 12px;
   margin-block: 3px;
-  background-color: #ba181b;
-  border: none;
+  background-color: #0b6e4f;
+  border: solid 2px #08a045;
   border-radius: 3px;
   color: #f5f3f4;
 }
@@ -59,4 +59,7 @@ body {
   border: solid 2px black;
   border-radius: 3px;
   padding: 10px;
+}
+img {
+  filter: invert(1);
 }
