@@ -15,3 +15,5 @@ This repo is where I will put all of my contributions for Frontend projects.
 [Simple Tabs](https://roadmap.sh/projects/simple-tabs)
 
 [Accordion](https://roadmap.sh/projects/accordion)
+
+[Cookie Consent](https://roadmap.sh/projects/cookie-consent)
