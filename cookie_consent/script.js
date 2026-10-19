@@ -1,25 +1,32 @@
-const set = localStorage.getItem("cookieSet") == "allow";
-const pop = document.querySelector(".pop-up");
-const buttons = document.querySelectorAll("button");
+const cookie = document.getElementById("pop-up");
+const resetbtn = document.getElementById("reset");
 
-if (!set) {
-  pop.style.display = "flex";
+function checkCookie() {
+  return localStorage.getItem("cookieSet") === "true";
+}
+function showCookiePop() {
+  cookie.style.display = "flex";
+  resetbtn.style.display = "none";
+}
+function resetCookies() {
+  localStorage.removeItem("cookieSet");
+  showCookiePop();
+}
+function setCookies() {
+  localStorage.setItem("cookieSet", true);
+  resetbtn.style.display = "block";
 }
 
-buttons.forEach((b) =>
-  b.addEventListener("click", (e) => {
-    const target = e.currentTarget.getAttribute("id");
-
-    if (target == "allow") {
-      localStorage.setItem("cookieSet", target);
-      document.querySelector(".pop-up").style.display = "none";
+document.querySelectorAll("#pop-up button").forEach((btn) =>
+  btn.addEventListener("click", (e) => {
+    if (e.currentTarget.id == "allow") {
+      setCookies();
     }
 
-    if (target == "decline") {
-      localStorage.setItem("cookieSet", target);
-      document.querySelector(".pop-up").style.display = "none";
-    }
+    cookie.style.display = "none";
   }),
 );
 
-// localStorage.clear("cookieSet");
+if (!checkCookie()) {
+  showCookiePop();
+}
