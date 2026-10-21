@@ -17,3 +17,5 @@ This repo is where I will put all of my contributions for Frontend projects.
 [Accordion](https://roadmap.sh/projects/accordion)
 
 [Cookie Consent](https://roadmap.sh/projects/cookie-consent)
+
+[Restricted Text Area](https://roadmap.sh/projects/restricted-textarea)
