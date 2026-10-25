@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+.group {
+  display: flex;
+  box-sizing: content-box;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  margin-block: 15px;
+  width: 300px;
+}
+.group input {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: medium;
+  padding: 4px;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+.group button {
+  padding: 6px;
+  background-color: lightseagreen;
+  border-radius: 3px;
+  border: none;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
