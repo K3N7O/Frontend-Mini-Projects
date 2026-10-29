@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "description": "What is the difference between var, let, and const?",
+    "answer": "var is function-scoped and can be redeclared. let and const are block-scoped. let can be reassigned, while const cannot be reassigned after it is declared."
+  },
+  {
+    "id": 2,
+    "description": "What is a closure?",
+    "answer": "A closure is a function that remembers the variables from the scope where it was created, even after that outer function has finished running."
+  },
+  {
+    "id": 3,
+    "description": "What is the difference between == and ===?",
+    "answer": "== compares values after type coercion, so 5 == '5' is true. === compares both value and type, so 5 === '5' is false. Prefer === to avoid surprises."
+  },
+  {
+    "id": 4,
+    "description": "What is hoisting?",
+    "answer": "Hoisting is JavaScript moving declarations to the top of their scope before the code runs. Function declarations and var are hoisted, but let and const cannot be used before their declaration line."
+  },
+  {
+    "id": 5,
+    "description": "What is the difference between null and undefined?",
+    "answer": "undefined means a variable has been declared but has no value yet. null is a value you assign on purpose to represent 'no value'."
+  },
+  {
+    "id": 6,
+    "description": "How do arrow functions differ from regular functions?",
+    "answer": "Arrow functions have a shorter syntax and do not have their own this. They use the this value from the surrounding scope. They also cannot be used as constructors."
+  },
+  {
+    "id": 7,
+    "description": "What is the event loop?",
+    "answer": "The event loop is the mechanism that lets JavaScript handle asynchronous work on a single thread. It moves finished callbacks from the queue onto the call stack whenever the stack is empty."
+  },
+  {
+    "id": 8,
+    "description": "What is a Promise?",
+    "answer": "A Promise is an object that represents the eventual result of an asynchronous operation. It can be pending, fulfilled, or rejected, and you handle the result with .then(), .catch(), and .finally()."
+  },
+  {
+    "id": 9,
+    "description": "What do async and await do?",
+    "answer": "async makes a function return a Promise. await pauses inside an async function until a Promise settles, which lets asynchronous code read like synchronous code."
+  },
+  {
+    "id": 10,
+    "description": "What is the difference between map() and forEach()?",
+    "answer": "map() returns a new array made from the results of your callback. forEach() just runs the callback for each item and returns undefined."
+  },
+  {
+    "id": 11,
+    "description": "What is destructuring?",
+    "answer": "Destructuring is a syntax for unpacking values from arrays or properties from objects into variables, for example const { name, age } = user; or const [first, second] = list;"
+  },
+  {
+    "id": 12,
+    "description": "What is the spread operator?",
+    "answer": "The spread operator (...) expands an array or object into individual elements or properties. It is commonly used to copy or merge arrays and objects, such as [...a, ...b]."
+  },
+  {
+    "id": 13,
+    "description": "What does the this keyword refer to?",
+    "answer": "this refers to the object that is currently running the code. Its value depends on how a function is called: an object for methods, the element for regular event handlers, and the outer scope's this for arrow functions."
+  },
+  {
+    "id": 14,
+    "description": "What is event delegation?",
+    "answer": "Event delegation means attaching one event listener to a parent element instead of many listeners on its children. It works because events bubble up, and you can use event.target to find which child was clicked."
+  },
+  {
+    "id": 15,
+    "description": "What is the DOM?",
+    "answer": "The DOM (Document Object Model) is a tree-like representation of an HTML page that JavaScript can read and change, such as adding elements, editing text, or updating styles."
+  },
+  {
+    "id": 16,
+    "description": "What is a callback function?",
+    "answer": "A callback is a function passed as an argument to another function, to be called later. Event handlers and array methods like map() and filter() both use callbacks."
+  },
+  {
+    "id": 17,
+    "description": "What do JSON.stringify() and JSON.parse() do?",
+    "answer": "JSON.stringify() converts a JavaScript value into a JSON string. JSON.parse() converts a JSON string back into a JavaScript value. They are often used with localStorage and APIs."
+  },
+  {
+    "id": 18,
+    "description": "What is a higher-order function?",
+    "answer": "A higher-order function is a function that takes another function as an argument, returns a function, or both. map(), filter(), and reduce() are common examples."
+  },
+  {
+    "id": 19,
+    "description": "What is the difference between a function declaration and a function expression?",
+    "answer": "A function declaration (function greet() {}) is hoisted, so you can call it before it appears in the code. A function expression (const greet = function() {}) is not usable until the line that defines it runs."
+  },
+  {
+    "id": 20,
+    "description": "What is event bubbling?",
+    "answer": "Event bubbling is when an event fires on the target element first, then travels up through its parent elements. You can stop it with event.stopPropagation()."
+  }
+]
