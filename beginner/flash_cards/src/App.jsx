@@ -1,14 +1,12 @@
 import { useState } from "react";
 import "./App.css";
-import CardContainer from "./components/flashCardContainer.jsx";
+import CardContainer from "./components/FlashCardContainer.jsx";
 import Card from "./components/Card.jsx";
 import ProgressBar from "./components/ProgressBar.jsx";
 import Navigation from "./components/Navigation.jsx";
 import info from "./data/information.json";
 
 function App() {
-  console.log(7 % info.length);
-
   const [current, setCurrent] = useState(0);
   const [state, setState] = useState(false);
 
@@ -26,13 +24,9 @@ function App() {
       <main>
         <h1>FlashCards</h1>
         <CardContainer>
-          <ProgressBar />
+          <ProgressBar currentValue={current} total={info.length} />
           <Card details={info[current]} state={state} />
-          <Navigation
-            onClick={toggle}
-            onDirect={handleDirect}
-            value={current}
-          />
+          <Navigation onClick={toggle} onDirect={handleDirect} />
         </CardContainer>
       </main>
     </>

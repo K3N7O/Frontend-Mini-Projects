@@ -1,7 +1,6 @@
-export default function Navigation({ value, onClick, onDirect }) {
+export default function Navigation({ onClick, onDirect }) {
   return (
     <div>
-      <h1>{value}</h1>
       <button onClick={() => onDirect(false)}>Previous</button>
       <button onClick={onClick}>Show Answer</button>
       <button onClick={() => onDirect(true)}>Next</button>
