@@ -1,3 +1,5 @@
 export default function Card({ details, state }) {
-  return <div>{!state ? details.description : details.answer}</div>;
+  return (
+    <div className=".card">{!state ? details.description : details.answer}</div>
+  );
 }

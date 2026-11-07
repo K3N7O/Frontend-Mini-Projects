@@ -7,12 +7,10 @@ import Navigation from "./components/Navigation.jsx";
 import info from "./data/information.json";
 
 function App() {
-  console.log(7 % info.length);
-
   const [current, setCurrent] = useState(0);
   const [state, setState] = useState(false);
 
-  function handleDirect(direction) {
+  function handleNavigate(direction) {
     direction
       ? setCurrent((prev) => (prev + 1) % info.length)
       : setCurrent((prev) => (prev - 1 + info.length) % info.length);
@@ -26,13 +24,12 @@ function App() {
       <main>
         <h1>FlashCards</h1>
         <CardContainer>
-          <ProgressBar />
-          <Card details={info[current]} state={state} />
-          <Navigation
-            onClick={toggle}
-            onDirect={handleDirect}
-            value={current}
+          <ProgressBar
+            currentIndex={info[current].id}
+            totalIndex={info.length}
           />
+          <Card details={info[current]} state={state} />
+          <Navigation onClick={toggle} onDirect={handleNavigate} />
         </CardContainer>
       </main>
     </>
