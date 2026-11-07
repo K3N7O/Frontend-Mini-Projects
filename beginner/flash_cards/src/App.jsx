@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import CardContainer from "./components/flashCardContainer.jsx";
+import CardContainer from "./components/FlashCardContainer.jsx";
 import Card from "./components/Card.jsx";
 import ProgressBar from "./components/ProgressBar.jsx";
 import Navigation from "./components/Navigation.jsx";
