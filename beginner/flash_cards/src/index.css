@@ -1,0 +1,56 @@
+<<<<<<< HEAD
+=======
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #2e2e2e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: lightcoral;
+  padding: 2em;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 12px;
+  width: 500px;
+  box-sizing: content-box;
+}
+.card {
+  box-sizing: border-box;
+}
+.card p {
+  text-align: right;
+  text-wrap: wrap;
+}
+.progress {
+  width: 100%;
+  position: relative;
+  border: solid 3px white;
+  border-radius: 3px;
+  padding: 4px;
+}
+.progress .bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: lightcyan;
+  border-radius: 4px;
+  padding: 4px;
+}
+.progress .bar span:nth-child(2) {
+  position: absolute;
+  right: 5px;
+}
+>>>>>>> 049ecb651ef23beffc2730e9b019d5e4108db45c

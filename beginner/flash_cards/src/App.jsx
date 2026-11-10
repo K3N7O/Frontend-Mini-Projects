@@ -10,7 +10,7 @@ function App() {
   const [current, setCurrent] = useState(0);
   const [state, setState] = useState(false);
 
-  function handleDirect(direction) {
+  function handleNavigate(direction) {
     direction
       ? setCurrent((prev) => (prev + 1) % info.length)
       : setCurrent((prev) => (prev - 1 + info.length) % info.length);
@@ -24,9 +24,18 @@ function App() {
       <main>
         <h1>FlashCards</h1>
         <CardContainer>
+<<<<<<< HEAD
           <ProgressBar currentValue={current} total={info.length} />
           <Card details={info[current]} state={state} />
           <Navigation onClick={toggle} onDirect={handleDirect} />
+=======
+          <ProgressBar
+            currentIndex={info[current].id}
+            totalIndex={info.length}
+          />
+          <Card details={info[current]} state={state} />
+          <Navigation onClick={toggle} onDirect={handleNavigate} />
+>>>>>>> 049ecb651ef23beffc2730e9b019d5e4108db45c
         </CardContainer>
       </main>
     </>
