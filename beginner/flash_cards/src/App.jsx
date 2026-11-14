@@ -22,7 +22,7 @@ function App() {
   return (
     <>
       <main>
-        <h1>FlashCards</h1>
+        <h2>FlashCards</h2>
         <CardContainer>
           <ProgressBar
             currentIndex={info[current].id}

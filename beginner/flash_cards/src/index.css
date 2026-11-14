@@ -1,11 +1,13 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #262730;
 }
 body {
   width: 100vw;
   height: 100vh;
-  background-color: #2e2e2e;
+  background-color: #262730;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,8 +16,10 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  background-color: lightcoral;
+  background-color: #77ba99;
   padding: 2em;
+  gap: 12px;
+  border-radius: 8px;
 }
 .container {
   display: flex;
@@ -27,27 +31,59 @@ main {
   box-sizing: content-box;
 }
 .card {
+  display: flex;
+  background-color: #eff0d1;
+  width: 100%;
+  justify-content: center;
+  padding: 12px;
   box-sizing: border-box;
+  align-items: center;
+  height: 100px;
+  border-radius: 8px;
+  text-wrap: balance;
 }
 .card p {
-  text-align: right;
-  text-wrap: wrap;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
 }
 .progress {
   width: 100%;
   position: relative;
   border: solid 3px white;
   border-radius: 3px;
-  padding: 4px;
+  padding: 3px;
+  font-size: 12px;
+  font-weight: 700;
 }
 .progress .bar {
   display: flex;
   justify-content: space-between;
-  background-color: lightcyan;
+  background-color: #eff0d1;
   border-radius: 4px;
   padding: 4px;
 }
 .progress .bar span:nth-child(2) {
   position: absolute;
   right: 5px;
+}
+.navigate {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: transparent;
+  border-radius: 8px;
+  background-color: #eff0d1;
+}
+.navigate button {
+  padding: 8px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.navigate button:active {
+  background-color: #dedfba;
 }
