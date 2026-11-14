@@ -24,9 +24,12 @@ function App() {
       <main>
         <h2>FlashCards</h2>
         <CardContainer>
-          <ProgressBar currentValue={current} total={info.length} />
+          <ProgressBar
+            currentIndex={info[current].id}
+            totalIndex={info.length}
+          />
           <Card details={info[current]} state={state} />
-          <Navigation onClick={toggle} onDirect={handleDirect} />
+          <Navigation onClick={toggle} onDirect={handleNavigate} />
         </CardContainer>
       </main>
     </>
